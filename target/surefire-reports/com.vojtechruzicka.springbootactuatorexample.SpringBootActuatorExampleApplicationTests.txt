@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.vojtechruzicka.springbootactuatorexample.SpringBootActuatorExampleApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.405 s <<< FAILURE! - in com.vojtechruzicka.springbootactuatorexample.SpringBootActuatorExampleApplicationTests
+contextLoads(com.vojtechruzicka.springbootactuatorexample.SpringBootActuatorExampleApplicationTests)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on de.codecentric.boot.admin.client.config.SpringBootAdminClientAutoConfiguration.registrator
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [de.codecentric.boot.admin.client.config.SpringBootAdminClientAutoConfiguration$ServletConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@6bc7c054]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/autoconfigure/web/servlet/DispatcherServletPath
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath
+
